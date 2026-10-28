@@ -1,0 +1,597 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="FreelanceHub connects skilled freelancers with clients looking for talent.">
+
+    <title>FreelanceHub | Find Your Talent</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+
+
+<body>
+
+    <header class="site-header">
+
+        <nav class="navbar container" aria-label="Main navigation">
+
+            <a class="logo" href="#home">Freelance<span>Hub</span></a>
+
+
+
+            <ul class="nav-links">
+
+                <li><a href="#freelancers">Find Talent</a></li>
+
+                <li><a href="#join">Join as Freelancer</a></li>
+
+                <li><a href="#hire">Post a Project</a></li>
+
+            </ul>
+
+
+
+            <a class="button button-small" href="#join">Get Started</a>
+
+        </nav>
+
+    </header>
+
+
+
+    <main id="home">
+
+        <section class="hero">
+
+            <div class="container hero-content">
+
+                <p class="eyebrow">YOUR SKILLS. YOUR OPPORTUNITIES.</p>
+
+                <h1>Find the right talent.<br>
+
+                    <span>Build something great.</span>
+
+                </h1>
+
+                <p class="hero-description">
+
+                    Connect talented freelancers with clients who need
+
+                    their skills. Find work or hire the right person
+
+                    for your next project.
+
+                </p>
+
+
+
+                <div class="hero-actions">
+
+                    <a class="button" href="#freelancers">Explore Freelancers</a>
+
+                    <a class="button button-outline" href="#join">Become a Freelancer</a>
+
+                </div>
+
+
+
+                <div class="hero-stats" aria-label="Platform highlights">
+
+                    <div>
+
+                        <strong>Expert</strong>
+
+                        <span>Freelancers</span>
+
+                    </div>
+
+                    <div>
+
+                        <strong>Flexible</strong>
+
+                        <span>Projects</span>
+
+                    </div>
+
+                    <div>
+
+                        <strong>Global</strong>
+
+                        <span>Opportunities</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <section class="search-section" aria-labelledby="search-title">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="eyebrow">HIRE WITH CONFIDENCE</p>
+
+                    <h2 id="search-title">Find your perfect freelancer</h2>
+
+                    <p>Explore professionals by their skills and expertise.</p>
+
+                </div>
+
+
+
+                <form class="search-form" id="search-form">
+
+                    <div class="form-field">
+
+                        <label for="skill-search">Skill or profession</label>
+
+                        <input
+
+                            type="search"
+
+                            id="skill-search"
+
+                            name="skill"
+
+                            placeholder="e.g. Web Developer"
+
+                        >
+
+                    </div>
+
+
+
+                    <div class="form-field">
+
+                        <label for="category-search">Category</label>
+
+                        <select id="category-search" name="category">
+
+                            <option value="">All categories</option>
+
+                            <option value="development">Web Development</option>
+
+                            <option value="design">UI/UX Design</option>
+
+                            <option value="writing">Content Writing</option>
+
+                            <option value="marketing">Digital Marketing</option>
+
+                            <option value="data">Data Science</option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <div class="form-field">
+
+                        <label for="budget-search">Maximum hourly rate</label>
+
+                        <select id="budget-search" name="rate">
+
+                            <option value="">Any rate</option>
+
+                            <option value="500">₹500/hour</option>
+
+                            <option value="1000">₹1,000/hour</option>
+
+                            <option value="2000">₹2,000/hour</option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <button class="button search-button" type="submit">
+
+                        Search
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+
+        <section class="freelancers-section" id="freelancers"
+
+                 aria-labelledby="freelancers-title">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="eyebrow">MEET THE PROFESSIONALS</p>
+
+                    <h2 id="freelancers-title">Featured freelancers</h2>
+
+                    <p>Discover people ready to bring your ideas to life.</p>
+
+                </div>
+
+
+
+                <div class="freelancer-grid" id="freelancer-grid" aria-live="polite"></div>
+                <p id="search-results-message" class="results-message" role="status"></p>
+
+            </div>
+
+        </section>
+
+
+
+        <section class="join-section" id="join"
+
+                 aria-labelledby="join-title">
+
+            <div class="container join-grid">
+
+                <div class="join-copy">
+
+                    <p class="eyebrow">SHOWCASE YOUR TALENT</p>
+
+                    <h2 id="join-title">Let clients discover your skills.</h2>
+
+                    <p>
+
+                        Create your freelancer profile, list your skills,
+
+                        set your hourly rate, and tell clients what you do best.
+
+                    </p>
+
+                    <ul class="benefit-list">
+
+                        <li>✓ Showcase your expertise</li>
+
+                        <li>✓ Set your own hourly rate</li>
+
+                        <li>✓ Connect with potential clients</li>
+
+                    </ul>
+
+                </div>
+
+
+
+                <form class="form-card" id="freelancer-form">
+
+                    <h3>Create your profile</h3>
+
+                    <p class="form-intro">Enter your professional details below.</p>
+
+
+
+                    <div class="form-field">
+
+                        <label for="freelancer-name">Full name</label>
+
+                        <input type="text" id="freelancer-name"
+
+                               name="name" autocomplete="name"
+
+                               placeholder="Your full name" required>
+
+                    </div>
+
+
+
+                    <div class="form-field">
+
+                        <label for="freelancer-email">Email address</label>
+
+                        <input type="email" id="freelancer-email"
+
+                               name="email" autocomplete="email"
+
+                               placeholder="you@example.com" required>
+
+                    </div>
+
+
+
+                    <div class="form-field">
+
+                        <label for="freelancer-category">Primary skill</label>
+
+                        <select id="freelancer-category"
+
+                                name="profession" required>
+
+                            <option value="">Choose your profession</option>
+
+                            <option value="development">Web Development</option>
+
+                            <option value="design">UI/UX Design</option>
+
+                            <option value="writing">Content Writing</option>
+
+                            <option value="marketing">Digital Marketing</option>
+
+                            <option value="data">Data Science</option>
+
+                            <option value="other">Other</option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <div class="form-field">
+
+                        <label for="freelancer-skills">Your skills</label>
+
+                        <textarea id="freelancer-skills" name="skills"
+
+                                  rows="3"
+
+                                  placeholder="e.g. HTML, CSS, JavaScript"
+
+                                  required></textarea>
+
+                        <small>Separate each skill with a comma.</small>
+
+                    </div>
+
+
+
+                    <div class="form-field">
+
+                        <label for="freelancer-rate">Hourly rate (₹)</label>
+
+                        <input type="number" id="freelancer-rate"
+
+                               name="hourly-rate" min="1"
+
+                               placeholder="e.g. 800" required>
+
+                    </div>
+
+
+
+                    <div class="form-field">
+
+                        <label for="freelancer-availability">Availability</label>
+
+                        <select id="freelancer-availability"
+
+                                name="availability" required>
+
+                            <option value="">Choose availability</option>
+
+                            <option value="full-time">Full-time</option>
+
+                            <option value="part-time">Part-time</option>
+
+                            <option value="project-based">Project-based</option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <button class="button button-full" type="submit">
+
+                        Create Freelancer Profile
+
+                    </button>
+
+                    <p class="form-note">
+
+                        Demo form. New profiles are added to this page only and are not saved after refresh.
+
+                    </p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+
+        <section class="hire-section" id="hire"
+
+                 aria-labelledby="hire-title">
+
+            <div class="container hire-container">
+
+                <div class="section-heading">
+
+                    <p class="eyebrow">HAVE A PROJECT?</p>
+
+                    <h2 id="hire-title">Tell us what you need</h2>
+
+                    <p>Describe your project and the skills you are looking for.</p>
+
+                </div>
+
+
+
+                <form class="project-form" id="project-form">
+
+                    <div class="form-field">
+
+                        <label for="client-name">Your name</label>
+
+                        <input type="text" id="client-name"
+
+                               name="client-name" autocomplete="name"
+
+                               required>
+
+                    </div>
+
+
+
+                    <div class="form-field">
+
+                        <label for="client-email">Email address</label>
+
+                        <input type="email" id="client-email"
+
+                               name="client-email" autocomplete="email"
+
+                               required>
+
+                    </div>
+
+
+
+                    <div class="form-field">
+
+                        <label for="project-title">Project title</label>
+
+                        <input type="text" id="project-title"
+
+                               name="project-title"
+
+                               placeholder="e.g. Business website"
+
+                               required>
+
+                    </div>
+
+
+
+                    <div class="form-field">
+
+                        <label for="required-skill">Required skill</label>
+
+                        <select id="required-skill" name="required-skill"
+
+                                required>
+
+                            <option value="">Select a skill category</option>
+
+                            <option value="development">Web Development</option>
+
+                            <option value="design">UI/UX Design</option>
+
+                            <option value="writing">Content Writing</option>
+
+                            <option value="marketing">Digital Marketing</option>
+
+                            <option value="data">Data Science</option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <div class="form-field">
+
+                        <label for="project-budget">Budget (₹)</label>
+
+                        <input type="number" id="project-budget"
+
+                               name="budget" min="1"
+
+                               placeholder="Your project budget" required>
+
+                    </div>
+
+
+
+                    <div class="form-field">
+
+                        <label for="project-deadline">Expected deadline</label>
+
+                        <input type="date" id="project-deadline"
+
+                               name="deadline">
+
+                    </div>
+
+
+
+                    <div class="form-field full-width">
+
+                        <label for="project-description">Project description</label>
+
+                        <textarea id="project-description"
+
+                                  name="description" rows="5"
+
+                                  placeholder="Describe the work and skills required..."
+
+                                  required></textarea>
+
+                    </div>
+
+
+
+                    <div class="full-width">
+
+                        <button class="button" type="submit">
+
+                            Submit Project Requirement
+
+                        </button>
+
+                    </div>
+
+                    <p class="form-note full-width">
+
+                        Demo form. Project details are not sent to a server.
+
+                    </p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <footer class="site-footer">
+
+        <div class="container footer-content">
+
+            <a class="logo footer-logo" href="#home">
+
+                Freelance<span>Hub</span>
+
+            </a>
+
+            <p>Connecting skills with opportunities.</p>
+
+            <p>&copy; 2026 FreelanceHub. All rights reserved.</p>
+
+        </div>
+
+    </footer>
+
+    <script type="module" src="./app.js"></script>
+</body>
+
+</html>

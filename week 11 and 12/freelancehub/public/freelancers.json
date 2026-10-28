@@ -1,0 +1,92 @@
+[
+  {
+    "id": "f1",
+    "name": "Arjun Kumar",
+    "role": "Full-Stack Developer",
+    "category": "development",
+    "bio": "Builds responsive websites and web applications using modern web technologies.",
+    "skills": ["HTML5", "CSS3", "React", "Node.js"],
+    "rate": 800,
+    "available": true
+  },
+  {
+    "id": "f2",
+    "name": "Simran Patel",
+    "role": "UI/UX Designer",
+    "category": "design",
+    "bio": "Creates clean user interfaces and user-friendly digital experiences.",
+    "skills": ["Figma", "UI Design", "Prototyping"],
+    "rate": 600,
+    "available": true
+  },
+  {
+    "id": "f3",
+    "name": "Rahul Verma",
+    "role": "Data Analyst",
+    "category": "data",
+    "bio": "Turns raw data into meaningful insights using reports and visualizations.",
+    "skills": ["Python", "SQL", "Excel", "Power BI"],
+    "rate": 700,
+    "available": true
+  },
+  {
+    "id": "f4",
+    "name": "Neha Sharma",
+    "role": "Content Writer",
+    "category": "writing",
+    "bio": "Writes clear blog posts, website copy and product descriptions that connect with readers.",
+    "skills": ["Blogging", "Copywriting", "Editing"],
+    "rate": 400,
+    "available": true
+  },
+  {
+    "id": "f5",
+    "name": "Karan Mehta",
+    "role": "Digital Marketer",
+    "category": "marketing",
+    "bio": "Plans and runs social media and ad campaigns that grow small businesses.",
+    "skills": ["Social Media", "Google Ads", "Analytics"],
+    "rate": 900,
+    "available": true
+  },
+  {
+    "id": "f6",
+    "name": "Ananya Iyer",
+    "role": "Frontend Developer",
+    "category": "development",
+    "bio": "Turns designs into fast, accessible and pixel-perfect web interfaces.",
+    "skills": ["JavaScript", "CSS3", "Accessibility"],
+    "rate": 500,
+    "available": false
+  },
+  {
+    "id": "f7",
+    "name": "Vikram Rao",
+    "role": "Data Scientist",
+    "category": "data",
+    "bio": "Builds machine learning models and dashboards that support better decisions.",
+    "skills": ["Python", "Pandas", "Machine Learning"],
+    "rate": 1800,
+    "available": true
+  },
+  {
+    "id": "f8",
+    "name": "Priya Nair",
+    "role": "Brand Designer",
+    "category": "design",
+    "bio": "Designs memorable logos, brand identities and marketing visuals.",
+    "skills": ["Branding", "Illustrator", "Typography"],
+    "rate": 1200,
+    "available": true
+  },
+  {
+    "id": "f9",
+    "name": "Mohit Joshi",
+    "role": "SEO Specialist",
+    "category": "marketing",
+    "bio": "Improves search rankings with technical audits and keyword-driven content plans.",
+    "skills": ["SEO", "Keyword Research", "Link Building"],
+    "rate": 450,
+    "available": true
+  }
+]

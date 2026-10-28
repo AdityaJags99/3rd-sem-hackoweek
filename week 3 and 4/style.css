@@ -1,0 +1,252 @@
+
+/* =========================
+   10. JOIN AS FREELANCER
+========================= */
+
+.join-section {
+    background: var(--background);
+}
+
+.join-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 60px;
+}
+
+.join-copy {
+    padding-top: 30px;
+}
+
+.join-copy h2 {
+    max-width: 480px;
+}
+
+.join-copy > p:not(.eyebrow) {
+    max-width: 480px;
+}
+
+.benefit-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 0;
+    margin-top: 28px;
+    list-style: none;
+    color: var(--heading);
+    font-weight: 600;
+}
+
+.form-card {
+    padding: 30px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface);
+    box-shadow: var(--shadow);
+}
+
+.form-card h3 {
+    font-size: 1.5rem;
+}
+
+.form-intro {
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+}
+
+.form-card .form-field {
+    margin-bottom: 18px;
+}
+
+.form-note {
+    font-size: 0.78rem;
+    color: var(--text);
+    margin: 14px 0 0;
+}
+
+/* =========================
+   11. CLIENT PROJECT FORM
+========================= */
+
+.hire-section {
+    background: var(--surface);
+}
+
+.hire-container {
+    max-width: 900px;
+}
+
+.project-form {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+    padding: 30px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+/* =========================
+   12. FOOTER
+========================= */
+
+.site-footer {
+    padding: 35px 0;
+    background: #191d35;
+    color: #d9dced;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+}
+
+.footer-logo {
+    color: #ffffff;
+}
+
+.footer-logo span {
+    color: #b5aaff;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 0.85rem;
+}
+
+/* =========================
+   13. RESPONSIVE DESIGN
+========================= */
+
+/* Tablets and smaller laptops */
+
+@media (max-width: 900px) {
+    .navbar {
+        flex-wrap: wrap;
+        padding-block: 15px;
+    }
+
+    .nav-links {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        gap: 22px;
+    }
+
+    .search-form {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .freelancer-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .join-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .join-copy {
+        padding-top: 0;
+    }
+}
+
+/* Mobile phones */
+
+@media (max-width: 600px) {
+    .container {
+        width: min(100% - 28px, var(--container));
+    }
+
+    section {
+        padding: 55px 0;
+    }
+
+    .navbar {
+        gap: 14px;
+    }
+
+    .logo {
+        font-size: 1.3rem;
+    }
+
+    .navbar > .button {
+        padding: 8px 11px;
+    }
+
+    .nav-links {
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding: 5px 0;
+        gap: 20px;
+    }
+
+    .nav-links li {
+        white-space: nowrap;
+    }
+
+    .hero {
+        padding: 65px 0 50px;
+    }
+
+    h1 {
+        letter-spacing: -1px;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+    }
+
+    .hero-actions .button {
+        width: 100%;
+    }
+
+    .hero-stats {
+        gap: 20px;
+        justify-content: space-between;
+    }
+
+    .hero-stats strong {
+        font-size: 1rem;
+    }
+
+    .hero-stats span {
+        font-size: 0.78rem;
+    }
+
+    .search-form,
+    .freelancer-grid,
+    .project-form {
+        grid-template-columns: 1fr;
+    }
+
+    .search-form,
+    .project-form,
+    .form-card {
+        padding: 20px;
+    }
+
+    .full-width {
+        grid-column: auto;
+    }
+
+    .freelancer-card {
+        padding: 22px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
